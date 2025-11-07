@@ -1,0 +1,151 @@
+body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffe4ec;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 900px;
+      background-color: #fff;
+      margin: 40px auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* ===== Header Section ===== */
+    header {
+      background-color: #ffb6c1;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 20px 30px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    header img {
+    width: 2in;                
+    height: 2in;               
+    border-radius: 15px;       
+    object-fit: cover;         
+    border: 3px solid #fff;   
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8em;
+      font-weight: 800;
+    }
+
+    header p {
+      margin-top: 6px;
+      line-height: 1.4;
+      font-size: 0.95em;
+    }
+
+    /* ===== Section Styles ===== */
+    section {
+      padding: 20px 40px;
+      border-bottom: 1px solid #f3d5df;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: #d63384;
+      border-left: 6px solid #ffb6c1;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    p, li {
+      line-height: 1.6;
+      font-size: 0.95em;
+    }
+
+    ul {
+      margin: 10px 0 0 20px;
+      padding: 0;
+    }
+
+    /* ===== Info Grid ===== */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 10px 20px;
+    }
+
+    .info-grid div {
+      margin-bottom: 8px;
+    }
+
+    /* ===== Reference Section ===== */
+    .reference {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background-color: #ffb6c1;
+      text-align: center;
+      padding: 12px;
+      color: white;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+
+    /* ===== Responsive Design ===== */
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+        justify-content: center;
+      }
+
+      header img {
+        margin: 0 auto;
+      }
+
+      header div {
+        text-align: center;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 1.1em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        background-color: #ffeaf0;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      p, li {
+        font-size: 0.9em;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
+    }
